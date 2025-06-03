@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hexa.messaging
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/messaging
+
+client:
+  address:
+    url: http://localhost:8082/addresses
