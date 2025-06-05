@@ -1,4 +1,4 @@
-package br.com.nathanfiorito.hexa.messaging.adapters.out.client.respose;
+package br.com.nathanfiorito.hexa.messaging.adapters.out.client.response;
 
 import lombok.Data;
 

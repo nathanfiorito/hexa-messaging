@@ -1,6 +1,7 @@
 package br.com.nathanfiorito.hexa.messaging.application.core.usecase;
 
 import br.com.nathanfiorito.hexa.messaging.application.core.domain.Customer;
+import br.com.nathanfiorito.hexa.messaging.application.core.exceptions.CustomerNotFoundException;
 import br.com.nathanfiorito.hexa.messaging.application.ports.in.FindCustomerByIdInputPort;
 import br.com.nathanfiorito.hexa.messaging.application.ports.out.FindCustomerByIdOutputPort;
 
@@ -13,6 +14,6 @@ public class FindCustomerByIdUseCase implements FindCustomerByIdInputPort {
 
     public Customer find(String id){
         return findCustomerByIdOutputPort.find(id)
-                .orElseThrow(() -> new RuntimeException("Customer not found"));
+                .orElseThrow(() -> new CustomerNotFoundException("Customer not found"));
     }
 }
