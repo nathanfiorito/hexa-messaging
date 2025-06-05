@@ -12,5 +12,5 @@ public class CustomerEntity {
     private String name;
     private AddressEntity address;
     private String cpf;
-    private boolean isCpfValid;
+    private Boolean isCpfValid;
 }

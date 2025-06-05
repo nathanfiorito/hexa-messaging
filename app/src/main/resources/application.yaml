@@ -1,9 +1,17 @@
+server:
+  port: 8080
+
 spring:
   application:
     name: hexa.messaging
   data:
     mongodb:
-      uri: mongodb://localhost:27017/messaging
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: root
+      database: hexagonal
 
 client:
   address:

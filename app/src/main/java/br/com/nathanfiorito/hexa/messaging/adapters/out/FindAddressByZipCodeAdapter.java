@@ -3,7 +3,7 @@ package br.com.nathanfiorito.hexa.messaging.adapters.out;
 import br.com.nathanfiorito.hexa.messaging.adapters.out.client.FindAddressByZipCodeClient;
 import br.com.nathanfiorito.hexa.messaging.adapters.out.client.mapper.AddressResponseMapper;
 import br.com.nathanfiorito.hexa.messaging.application.core.domain.Address;
-import br.com.nathanfiorito.hexa.messaging.application.core.ports.out.FindAddressByZipCodeOutputPort;
+import br.com.nathanfiorito.hexa.messaging.application.ports.out.FindAddressByZipCodeOutputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
